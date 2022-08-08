@@ -2,8 +2,7 @@
   "name": "gallery-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Lidar-Koma.github.io",
-
+  "homepage": "https://lidar-koma.github.io/gallery-app/",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.5",

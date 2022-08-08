@@ -21,6 +21,7 @@ function PhotoContainer() {
     const[name,SetName]=useState('');
     //const[match,SetMatch]=useState(query);
     
+    
     useEffect(() => {
         //SetMatch(query)
         handleSearch(query);

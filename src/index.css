@@ -85,7 +85,7 @@ input {
   overflow: hidden;
   margin-bottom: 15px;
   padding: 1px;
-    border: 1px solid #d13f13f5;
+  border: 1px solid #d13f13f5;
  
 }
 
@@ -93,6 +93,10 @@ input {
   width: 100%;
   transform: scale(1.25);
   transition: transform 1.25s;
+  object-position: 50% 50%;
+  height: 151px;
+  object-fit: cover;
+  
 }
 
 .photo-container li:hover img {
@@ -103,9 +107,18 @@ input {
   width: 100%;
 }
 
-@media only screen and (max-width: 767px)  {
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
     padding-top: 2em;
+  }
+  .photo-container ul li {
+    width: 284px;
+    height: 165px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding: 1px;
+    border: 1px solid #d13f13f5;
+   
   }
 
   .photo-container li {

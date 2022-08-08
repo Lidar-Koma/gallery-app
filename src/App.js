@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {HashRouter, Routes, Route} from 'react-router-dom'
 
 
 // App components
@@ -14,7 +14,9 @@ import BadRoute from './components/BadRoute';
 
 const App = () => {
   return (
-    <Router>
+   
+      
+      <HashRouter basename="/">
       <div className="container">
         <SearchForm />
         <Nav />
@@ -24,11 +26,14 @@ const App = () => {
       <Routes>
 
 <Route path="/search/:query" element={<PhotoContainer/>}></Route>
+<Route exact path="/:query" element={<PhotoContainer/>}></Route>
 
 
-<Route element={BadRoute} />
+
+<Route path="*" element={<BadRoute/>} />
 </Routes>
-    </Router>
+</HashRouter>
+ 
   );
 }
 
