@@ -1,0 +1,13 @@
+import React from 'react';
+
+// Component for a bad route
+const BadRoute = () => {
+    return (
+        <div className="not-found">
+            <h3>404</h3>
+            <p>Page does not exist! Click on one of the links or use the search bar.</p>
+        </div>
+    )
+}
+
+export default BadRoute
